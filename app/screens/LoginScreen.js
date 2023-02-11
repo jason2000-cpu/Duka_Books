@@ -1,9 +1,11 @@
 import React from 'react';
 import { Text, View, StyleSheet, TextInput } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Colors from '../config/Colors';
 
-function LoginScreen(props) {
+function LoginScreen({navigation}) {
     return (
         <View style={styles.container}>
            <View style={styles.logo_sec}>
@@ -23,11 +25,11 @@ function LoginScreen(props) {
                         <TextInput  style={{paddingLeft: 9, borderWidth:2, borderRadius: 5, borderColor:Colors.primary}} placeholder='Repeat password'/>
                     </View>
                     <View style={{backgroundColor:Colors.primary, borderWidth: 2,borderRadius: 5, height: 30,marginHorizontal: 25}}>
-                        <Text  style={{paddingLeft:110, color:Colors.secondary, fontSize: 20, paddingTop: 2}}>LOGIN</Text>
+                        <Text  style={{paddingLeft:110, color:Colors.secondary, fontSize: 20, paddingTop: 2}} onPress={()=>navigation.navigate('Dashboard')}>LOGIN</Text>
                     </View>
                     <Text>Or</Text>
                     <View style={{backgroundColor:Colors.secondary, borderWidth: 2,borderRadius: 5, height: 30,marginHorizontal: 25}}>
-                        <Text style={{paddingLeft:110, fontSize: 20, paddingTop: 2}}>SIGNUP</Text>
+                        <Text style={{paddingLeft:110, fontSize: 20, paddingTop: 2}} onPress={()=> navigation.navigate("Register")}>SIGNUP</Text>
                     </View>
             </View>
 

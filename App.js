@@ -5,18 +5,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import RegisterScreen from './app/screens/RegisterScreen';
 import LoginScreen from './app/screens/LoginScreen';
+import Routes from './app/screens/Routes';
+
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <Text>Hello World!!</Text>
-    //   <StatusBar style="auto" />
-    // </View>,
     // <WelcomeScreen />,
     //<RegiterScreen />
-    <LoginScreen />
+    <LoginScreen />,
+    <Routes />
    
-    
   );
 }
 

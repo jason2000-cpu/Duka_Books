@@ -4,7 +4,7 @@ import { Text, View, StyleSheet, Button } from 'react-native';
 
 import Colors from '../config/Colors';
 
-function WelcomeScreen(props) {
+function WelcomeScreen({navigation}) {
     return (
         <View style={styles.container}>
            <View style={styles.logo_sec}>
@@ -13,7 +13,7 @@ function WelcomeScreen(props) {
                 <Text style={styles.logo_ad}>your daily transactions kept safe</Text>
            </View>
            <View style={styles.btn_sec}>
-            <Text  onPress={()=>{alert("Hello jackson")}} style={styles.btn}>Get Started -&gt;</Text>
+            <Text  onPress={()=>{navigation.navigate('Register')}} style={styles.btn}>Get Started -&gt;</Text>
            </View>
 
 

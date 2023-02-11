@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet, Button, TextInput } from 'react-native';
 import Colors from '../config/Colors';
 
-function RegisterScreen(props) {
+function RegisterScreen({navigation}) {
     return (
         <View style={styles.container}>
            <View style={styles.logo_sec}>
@@ -34,11 +34,11 @@ function RegisterScreen(props) {
                         <TextInput  style={{paddingLeft: 9, borderWidth:2, borderRadius: 5, borderColor:Colors.primary}} placeholder='Repeat password'/>
                     </View>
                     <View style={{backgroundColor:Colors.primary, borderWidth: 2,borderRadius: 5, height: 30,marginHorizontal: 25}}>
-                        <Text  style={{paddingLeft:110, color:Colors.secondary, fontSize: 20, paddingTop: 2}}>SIGNUP</Text>
+                        <Text  style={{paddingLeft:110, color:Colors.secondary, fontSize: 20, paddingTop: 2}} onPress={()=>navigation.navigate('Dashboard')}>SIGNUP</Text>
                     </View>
                     <Text>Or</Text>
                     <View style={{backgroundColor:Colors.secondary, borderWidth: 2,borderRadius: 5, height: 30,marginHorizontal: 25}}>
-                        <Text style={{paddingLeft:110, fontSize: 20, paddingTop: 2}}>SIGNIN</Text>
+                        <Text style={{paddingLeft:110, fontSize: 20, paddingTop: 2}} onPress={()=>navigation.navigate('Login') } >SIGNIN</Text>
                     </View>
             </View>
 
