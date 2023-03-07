@@ -19,7 +19,7 @@ function DashboardScreen(props) {
                 <Text style={{marginRight: 20, fontSize:30}}>{BarIcon}</Text>
                 <Text style={{marginRight: 20, fontSize:30, color:Colors.primary}}>Duka  Books</Text>
                 <Text style={{marginRight: 20, fontSize:30}}>{SearchIcon}</Text>
-                <Text style={{marginRight: 20, fontSize:30}}>{BellIcon}</Text>
+                <Text style={{marginRight: 18, fontSize:30}}>{BellIcon}</Text>
             </View>
         </View>
     );
