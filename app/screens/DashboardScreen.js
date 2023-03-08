@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextComponent } from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+// import PieChart from 'react-native-pie-chart';
+import Pie from 'react-native-pie';
 
 
 import Colors from '../config/Colors';
@@ -20,13 +21,114 @@ function DashboardScreen(props) {
                 <Text style={{marginRight: 10,marginLeft: 20,marginTop: 8, fontSize:30}}>{SearchIcon}</Text>
                 <Text style={{marginRight: 20, marginLeft:20, marginTop: 8, fontSize:30}}>{BellIcon}</Text>
             </View>
-              <View style={styles.invoice}>
+              <View style={styles.body}>
                     <Text style={{fontSize:25}}>Invoices</Text>
-                    <Text style={{display:'flex', flexDirection:'row'}}>
-                        <Text style={{fontSize:25,}}>Ksh 10000</Text>
+                    <View style={{ flexDirection:'row'}}>
+                        <Text style={{fontSize:25, fontWeight:'500'}}>Ksh 10,000</Text>
+                        <Text style={{marginHorizontal: 10, fontSize:20,  top:2}}>unpaid</Text>
+                        <Text style={{marginLeft:5, fontSize: 15, top:4}}>Last 365 days</Text>
+                    </View>
+                    <View style={{flexDirection: 'row', justifyContent:'space-between', margin:10}}>
+                        <View >
+                            <Text style={{fontSize: 20}}>Ksh 230</Text>
+                            <Text style={{fontWeight: '150', marginLeft: 10}}>Overdue</Text>
+                        </View>
+                        <View>
+                            <Text style={{marginRight:40, fontSize:20}}>Ksh 2000 </Text>
+                            <Text style={{fontWeight: '150', marginLeft: 7}}>Not due yet</Text>
+                        </View>
+                    </View>
+                    <Text style={{borderRadius: 4 ,borderWidth:1, width: '95%', height: 26, marginTop: 10, backgroundColor: Colors.grey}}></Text>
+                    <Text style={{ borderBottomLeftRadius: 4,borderTopLeftRadius: 4,borderWidth:1, position:'absolute', top:128,height: 25, left: 0, width:'40%', backgroundColor:Colors.primary}}></Text>
+                    <View>
+                        <View style={{ marginTop:20,flexDirection:'row'}}>
+                            <Text style={{marginRight: 12, fontSize:25, fontWeight:'500'}}>Ksh 3, 234</Text>
+                            <Text style={{marginRight: 4, fontSize:20,  top:2}}>paid</Text>
+                            <Text style={{marginLeft:5, fontSize: 15, top:6}}>Limit 30 days</Text>
+                        </View>
+                    <View style={{flexDirection: 'row', justifyContent:'space-between', margin:10}}>
+                        <View >
+                            <Text style={{fontSize: 20}}>Ksh 2, 062</Text>
+                            <Text style={{fontWeight: '150', marginLeft: 10}}>Deposited</Text>
+                        </View>
+                        <View>
+                            <Text style={{marginRight:40, fontSize:20}}>Ksh 1, 653 </Text>
+                            <Text style={{fontWeight: '150', marginLeft: 7}}>Not deposited</Text>
+                        </View>
+                    </View>
+                    <View>
+                        <Text style={{borderRadius: 4 ,borderWidth:1, width: '95%', height: 26, marginTop: 10, backgroundColor: Colors.grey}}></Text>
+                        <Text style={{ borderBottomLeftRadius: 4,borderTopLeftRadius: 4,borderWidth:1, position:'absolute', top:10,height: 25, left: 0, width:'60%', backgroundColor:Colors.primary}}></Text>
+                    </View>
+                    </View>
+                    <View style={styles.expenses}>
+                        <Text style={{fontSize:25}}>Expenses </Text>
+                        <View style={{marginTop: 10}}>
+                            <Text style={{marginRight:40, fontSize:22, fontWeight:'500'}}>Ksh 3, 500</Text>
+                            <Text style={{fontWeight: '150', marginLeft: 10}}>Last month</Text>
+                        </View>
+                        <View style={styles.pie}>
 
-                    </Text>
+                        <View style={styles.container}>
+                            <View
+                                style={{
+                                paddingVertical: 15,
+                                flexDirection: 'row',
+                                width: 350,
+                                justifyContent: 'space-between',
+                                }}
+                            ></View>
+
+                            <Pie
+                            radius={80}
+                            innerRadius={50}
+                            sections={[
+                                {
+                                percentage: 10,
+                                color: '#C70039',
+                                },
+                                {
+                                percentage: 20,
+                                color: '#44CD40',
+                                },
+                                {
+                                percentage: 30,
+                                color: '#404FCD',
+                                },
+                                {
+                                percentage: 40,
+                                color: '#EBD22F',
+                                },
+                            ]}
+                            strokeCap={'butt'}
+                            />
+                        </View>
+                        <View
+                            style={{
+                            paddingVertical: 15,
+                            flexDirection: 'row',
+                            width: 350,
+                            justifyContent: 'space-between',
+                            }}
+                        >
+                        </View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </View>
+                    </View>
                 </View>
+
         </View>
     );
 }
@@ -41,10 +143,14 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection:'row'
     },
-    invoice:{
+    body:{
         flex: 15,
-        marginLeft: 10,
+        marginLeft: 7,
+        // borderWidth:2
         
+    },
+    expenses:{
+        marginTop: 25
     }
 
 })
