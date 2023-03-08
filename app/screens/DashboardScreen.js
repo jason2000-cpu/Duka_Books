@@ -1,18 +1,20 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextComponent } from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-// import PieChart from 'react-native-pie-chart';
-import Pie from 'react-native-pie';
 
+//\\ import PieChart from 'react-native-pie-chart';
+//import Pie from 'react-native-pie';
 
 import Colors from '../config/Colors';
+import Pie from 'react-native-pie';
 
 const BarIcon = <FontAwesome5 name={'bars'} brand solid size={25} />;
 const SearchIcon = <FontAwesome5 name={'search'} brand size={25} />;
 const BellIcon = <FontAwesome5 name={'bell'} brand solid size={25} />;
 
-
 function DashboardScreen(props) {
+
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -68,61 +70,7 @@ function DashboardScreen(props) {
                             <Text style={{fontWeight: '150', marginLeft: 10}}>Last month</Text>
                         </View>
                         <View style={styles.pie}>
-
-                        <View style={styles.container}>
-                            <View
-                                style={{
-                                paddingVertical: 15,
-                                flexDirection: 'row',
-                                width: 350,
-                                justifyContent: 'space-between',
-                                }}
-                            ></View>
-
-                            <Pie
-                            radius={80}
-                            innerRadius={50}
-                            sections={[
-                                {
-                                percentage: 10,
-                                color: '#C70039',
-                                },
-                                {
-                                percentage: 20,
-                                color: '#44CD40',
-                                },
-                                {
-                                percentage: 30,
-                                color: '#404FCD',
-                                },
-                                {
-                                percentage: 40,
-                                color: '#EBD22F',
-                                },
-                            ]}
-                            strokeCap={'butt'}
-                            />
-                        </View>
-                        <View
-                            style={{
-                            paddingVertical: 15,
-                            flexDirection: 'row',
-                            width: 350,
-                            justifyContent: 'space-between',
-                            }}
-                        >
-                        </View>
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
                         </View>
