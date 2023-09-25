@@ -31,7 +31,7 @@ The app aims to improve business management and financial accountability for SME
 
 ![Menu Bar](./app/assets/images/MenuBar.jpg)
 
-- Generation of financial reports.
+- Generation of financial reports. (under development)
 - Invoicing feature for sending bills to customers via email. (under development)
 - User notifications for pending bills.( under development)
 
