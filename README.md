@@ -11,12 +11,10 @@ The app aims to improve business management and financial accountability for SME
 - User-friendly login and registration system.
 
 
-<img src="./app/assets/images/LoginScreen.jpg" alt="Login Screen" width="600" height="600" /> 
-<img src="./app/assets/images/RegScreenActive.jpg" alt="Signup Screen" width="400" height="300" />
-;; ![Login Screen](./app/assets/images/LoginScreen.jpg){ width=400 height=300}
 
 
-![Signup Screen](./app/assets/images/RegisterScreenActive.jpg){ width=400 height=300}
+
+![Signup Screen](./app/assets/images/RegisterScreenActive.jpg)
 
 
 
@@ -24,14 +22,14 @@ The app aims to improve business management and financial accountability for SME
 - Secure storage and retrieval of financial transactions.
 - Dashboard with cash flow and expense summaries for previous business days.
 
-![Dashboard Screen](./app/assets/images/Dashboard.jpg){ width=400 height=300}
+![Dashboard Screen](./app/assets/images/Dashboard.jpg)
 
 - Creation and management of transaction records.
 
-![Menu Bar](./app/assets/images/MenuBar.jpg){ width=400 height=300}
+![Menu Bar](./app/assets/images/MenuBar.jpg)
 - Viewing and searching of previous transactions.
 
-![Menu Bar](./app/assets/images/MenuBar.jpg) {width=400 height=300}
+![Menu Bar](./app/assets/images/MenuBar.jpg)
 
 - Generation of financial reports.
 - Invoicing feature for sending bills to customers via email. (under development)
