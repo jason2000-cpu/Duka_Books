@@ -11,7 +11,9 @@ The app aims to improve business management and financial accountability for SME
 - User-friendly login and registration system.
 
 
-![Login Screen](./app/assets/images/LoginScreen.jpg){ width=400 height=300}
+<img src="./app/assets/images/LoginScreen.jpg" alt="Login Screen" width="400" height="300" /> 
+<img src="./app/assets/images/RegisterScreenActive.jpg" alt="Signup Screen" width="400" height="300" />
+;; ![Login Screen](./app/assets/images/LoginScreen.jpg){ width=400 height=300}
 
 
 ![Signup Screen](./app/assets/images/RegisterScreenActive.jpg){ width=400 height=300}
