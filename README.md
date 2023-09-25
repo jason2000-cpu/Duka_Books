@@ -12,9 +12,9 @@ The app aims to improve business management and financial accountability for SME
 
 
 
+![Login Screen](./app/assets/images/LoginScreen.jpg)
 
-
-![Signup Screen](./app/assets/images/RegisterScreenActive.jpg)
+![Signup Screen](./app/assets/images/RegScreenActive.jpg)
 
 
 
